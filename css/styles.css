@@ -1,9 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    /*-webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box;*/
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 	font-family: 'Poiret One', cursive;
     color: #fff;
     margin: auto;
-    width: 80%;
+    width: 100%;
 	background: url(../img/tartan.jpg) repeat 0 0;
 }
 
@@ -28,7 +28,7 @@ h1 span {
 .timer {
 	width: 80%;
 	min-height: 600px;
-	margin: 50px auto auto auto;
+	margin: 20px auto auto auto;
 	padding: 30px;
 	background: #fff;
 	border: 5px solid #d40202;
@@ -39,9 +39,6 @@ h1 span {
 	   -moz-box-shadow: 0 0 15px #000;
 	        box-shadow: 0 0 15px #000;
 }
-
-
-/* pomodoro */
 
 .pomodoro {
 	position: relative;
