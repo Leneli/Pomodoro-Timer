@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
+}
+
+body {
+    font: 100%/1.5em Arial, sans-serif;
+	font-family: 'Poiret One', cursive;
+    color: #fff;
+    margin: auto;
+    width: 80%;
+	background: url(../img/tartan.jpg) repeat 0 0;
+}
+
+h1 {
+	text-align: center;
+	color: #d40202;
+	font-weight: bold;
+	font-size: 6em;
+}
+h1 span {
+	color: #008000;
+}
+
+.timer {
+	width: 80%;
+	min-height: 600px;
+	margin: 50px auto auto auto;
+	padding: 30px;
+	background: #fff;
+	border: 5px solid #d40202;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+	-webkit-box-shadow: 0 0 15px #000;
+	   -moz-box-shadow: 0 0 15px #000;
+	        box-shadow: 0 0 15px #000;
+}
+
+
+/* pomodoro */
+
+.pomodoro {
+	position: relative;
+	width: 310px;
+	height: 310px;
+	margin: auto;
+	margin-top: 50px;
+	background: #d40202;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	border: 10px solid #fff;
+	-webkit-box-shadow: 0 0 0 20px #d40202;
+	   -moz-box-shadow: 0 0 0 20px #d40202;
+	        box-shadow: 0 0 0 20px #d40202;
+	cursor: pointer;
+}
+
+.pomodoro::before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 120px;
+	height: 70px;
+	bottom: 155px;
+    left: 105px;
+	border-left: 25px solid;
+	border-bottom: 25px solid;
+	border-color: #008000;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+
+time {
+	display: block;
+	position: absolute;
+	width: 100%;
+	top: 200px;
+	text-align: center;
+	font-family: 'Quantico', sans-serif;
+	font-size: 5em;
+}
