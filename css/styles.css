@@ -67,7 +67,7 @@ h1 span {
     left: 105px;
 	border-left: 25px solid;
 	border-bottom: 25px solid;
-	border-color: #008000;
+	border-color: #fff;
 	-webkit-transform: rotate(-45deg);
 	   -moz-transform: rotate(-45deg);
 	    -ms-transform: rotate(-45deg);
@@ -75,10 +75,18 @@ h1 span {
 	        transform: rotate(-45deg);
 }
 
-.green { /* For green ring */
+.active { /* For green ring */
 	-webkit-box-shadow: 0 0 0 20px #008000;
 	   -moz-box-shadow: 0 0 0 20px #008000;
 	        box-shadow: 0 0 0 20px #008000;
+}
+
+.active.pomodoro::before { /* For green check*/
+	border-color: #008000;
+}
+
+.coffee.pomodoro {
+	background: #008000;
 }
 
 time {
