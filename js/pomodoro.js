@@ -18,7 +18,7 @@ pomodoro[0].onclick = function() {
 	
 	if (i%2 !== 0) { //по первому клику - таймер [пере]запущен
 		pomodoro[0].classList.add('active');
-		startTimer(5000);
+		startTimer(timeWork);
 		
 		message.innerHTML = 'Coffee break!';
 		ok.onclick = function() {
@@ -27,7 +27,7 @@ pomodoro[0].onclick = function() {
 			popup.classList.remove('block');
 			
 			message.innerHTML = "It's time to work!";
-			startTimer(3000);
+			startTimer(timeCoffee);
 			ok.onclick = function() {
 				pomodoro[0].classList.remove('active');
 				pomodoro[0].classList.remove('coffee');
@@ -48,13 +48,6 @@ pomodoro[0].onclick = function() {
 };
 
 
-
-
-
-
-
-
-
 //**************************** ГОТОВЫЕ РАБОТАЮЩИЕ ФУНКЦИИ
 
 function startTimer (t) { //отсчет времени
@@ -66,10 +59,19 @@ function startTimer (t) { //отсчет времени
 
 		if(t < 1000) {
 			clearInterval(intervalID);
+			addAudio();
 			popup.classList.add('block');
 		};
 		
 	}, 1000);
+};
+
+
+function addAudio() { //звуковой сигнал
+	var audio = new Audio();
+	audio.preload = 'auto';
+	audio.src = 'audio/ring.mp3';
+	audio.play();
 };
 
 
