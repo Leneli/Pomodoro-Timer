@@ -12,6 +12,7 @@ body {
     color: #fff;
     margin: auto;
     width: 100%;
+	min-width: 520px;
 	background: url(../img/tartan.jpg) repeat 0 0;
 }
 
@@ -97,4 +98,198 @@ time {
 	text-align: center;
 	font-family: 'Quantico', sans-serif;
 	font-size: 5em;
+}
+
+
+/*** Всплывающее окно ***/
+#popup {
+	display: none;
+	position: absolute;
+	width: 100%;
+	min-width: 520px;
+	min-height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 100;
+}
+
+#popup > div {
+	width: 50%;
+	min-height: 200px;
+	margin: 20% auto auto auto;
+	text-align: center;
+	background-color: white;
+	color: #d40202;
+	border: 5px solid #d40202;
+	-webkit-border-radius: 10px;
+	   -moz-border-radius: 10px;
+	        border-radius: 10px;
+}
+
+#popup > div > h3 {
+	font-size: 6em;
+}
+
+
+#popup > div > p {
+	font-size: 3em;
+	color: #008000;
+	padding: 15px;
+}
+
+#popup > div > button {
+	margin-bottom: 20px;
+	width: 40%;
+}
+
+#popup.block {display: block;}
+
+.glyphicon {
+	font-size: 4em;
+	margin-top: 10px;
+	-webkit-animation: ring 0.5s linear infinite;
+	   -moz-animation: ring 0.5s linear infinite;
+	     -o-animation: ring 0.5s linear infinite;
+	        animation: ring 0.5s linear infinite;
+}
+
+@-webkit-keyframes ring {
+	0% {
+		-webkit-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	25% {
+		-webkit-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	50% {
+		-webkit-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(45deg);
+		        transform: rotate(45deg);
+	}
+	75 {
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	100% {
+		-webkit-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+}
+
+@-moz-keyframes ring {
+	0% {
+		-moz-transform-origin: center 0;
+		     transform-origin: center 0;
+		-moz-transform: rotate(-45deg);
+		     transform: rotate(-45deg);
+	}
+	25% {
+		-moz-transform-origin: center 0;
+		     transform-origin: center 0;
+		-moz-transform: rotate(0);
+		     transform: rotate(0);
+	}
+	50% {
+		-moz-transform-origin: center 0;
+		     transform-origin: center 0;
+		-moz-transform: rotate(45deg);
+		     transform: rotate(45deg);
+	}
+	75 {
+		-moz-transform: rotate(0);
+		     transform: rotate(0);
+	}
+	100% {
+		-moz-transform-origin: center 0;
+		     transform-origin: center 0;
+		-moz-transform: rotate(-45deg);
+		     transform: rotate(-45deg);
+	}
+}
+
+@-o-keyframes ring {
+	0% {
+		-o-transform-origin: center 0;
+		   transform-origin: center 0;
+		-o-transform: rotate(-45deg);
+		   transform: rotate(-45deg);
+	}
+	25% {
+		-o-transform-origin: center 0;
+		   transform-origin: center 0;
+		-o-transform: rotate(0);
+		   transform: rotate(0);
+	}
+	50% {
+		-o-transform-origin: center 0;
+		   transform-origin: center 0;
+		-o-transform: rotate(45deg);
+		   transform: rotate(45deg);
+	}
+	75 {
+		-o-transform: rotate(0);
+		   transform: rotate(0);
+	}
+	100% {
+		-o-transform-origin: center 0;
+		   transform-origin: center 0;
+		-o-transform: rotate(-45deg);
+		   transform: rotate(-45deg);
+	}
+}
+
+@keyframes ring {
+	0% {
+		-webkit-transform-origin: center 0;
+		   -moz-transform-origin: center 0;
+		     -o-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(-45deg);
+		   -moz-transform: rotate(-45deg);
+		     -o-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
+	25% {
+		-webkit-transform-origin: center 0;
+		   -moz-transform-origin: center 0;
+		     -o-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(0);
+		   -moz-transform: rotate(0);
+		     -o-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	50% {
+		-webkit-transform-origin: center 0;
+		   -moz-transform-origin: center 0;
+		     -o-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(45deg);
+		   -moz-transform: rotate(45deg);
+		     -o-transform: rotate(45deg);
+		        transform: rotate(45deg);
+	}
+	75 {
+		-webkit-transform: rotate(0);
+		   -moz-transform: rotate(0);
+		     -o-transform: rotate(0);
+		        transform: rotate(0);
+	}
+	100% {
+		-webkit-transform-origin: center 0;
+		   -moz-transform-origin: center 0;
+		     -o-transform-origin: center 0;
+		        transform-origin: center 0;
+		-webkit-transform: rotate(-45deg);
+		   -moz-transform: rotate(-45deg);
+		     -o-transform: rotate(-45deg);
+		        transform: rotate(-45deg);
+	}
 }
